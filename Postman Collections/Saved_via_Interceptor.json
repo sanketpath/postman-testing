@@ -1,0 +1,55 @@
+{
+  "info": {
+    "_postman_id": "34a2fb52-0e7b-4019-83a9-95f100050464",
+    "name": "Saved via Interceptor",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://sidebar.io/api",
+      "_postman_id": "e19f2760-4030-45fd-976f-0a89da7e9f21",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "DNT",
+            "value": "1"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "none"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          }
+        ],
+        "url": "https://sidebar.io/api"
+      },
+      "response": []
+    }
+  ]
+}
