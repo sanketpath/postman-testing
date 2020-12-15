@@ -1,0 +1,51 @@
+{
+  "info": {
+    "_postman_id": "62d44ad7-5b67-429c-a2fe-c6460ba34dd5",
+    "name": "stage collection updated",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "echo",
+      "_postman_id": "072dd6eb-6001-4145-941e-f3ca1fbc4c2a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Hello World\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "foo1",
+              "value": "bar1"
+            },
+            {
+              "key": "foo2",
+              "value": "bar2"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
