@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "fd40d151-4784-4c8c-ae6a-0d6ff3498419",
+    "name": "Sample API Doc",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Sample endpoint: Returns details about a particular user",
+      "_postman_id": "27f57b01-cd55-4c2c-a5ef-182e3cefb836",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/user?id=<integer>",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "user"
+          ],
+          "query": [
+            {
+              "description": "(Required) ID of the user",
+              "key": "id",
+              "value": "<integer>"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "d542531c-67ff-43cd-813d-60f798c55213",
+          "name": "Sample response: Details about a user by ID",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/user?id=<integer>",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "user"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-next",
+              "value": "<string>",
+              "description": "A link to the next page of responses"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n \"id\": \"<long>\",\n \"name\": \"<string>\",\n \"tag\": \"<string>\"\n}"
+        },
+        {
+          "id": "e4b7d2c8-fcfc-4954-9f51-4c098ac3e64c",
+          "name": "Unexpected error",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/user?id=<integer>",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "user"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "status": "Internal Server Error",
+          "code": 500,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n \"code\": \"<integer>\",\n \"message\": \"<string>\"\n}"
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "id": "baseUrl",
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}
