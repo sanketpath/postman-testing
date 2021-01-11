@@ -1,5 +1,5 @@
 {
-"comment from GitHub"
+    
   "components": {
     "schemas": {
       "account": {
@@ -14,7 +14,7 @@
             "description": "Business information about the account.",
             "nullable": true
           },
-          #Comment from GitHub
+          
           "business_type": {
             "description": "The business type.",
             "enum": [
