@@ -1,4 +1,5 @@
 {
+#comment from GitHub
   "components": {
     "schemas": {
       "account": {
