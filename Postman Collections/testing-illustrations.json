@@ -6,7 +6,7 @@
   },
   "item": [
     {
-      "name": "https://api.flickr.com/services",
+      "name": "https://httpbin.org",
       "event": [
         {
           "listen": "test",
