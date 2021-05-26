@@ -1,0 +1,69 @@
+{
+  "info": {
+    "_postman_id": "2e9da258-c201-4cbd-9ef3-1095f1e2419d",
+    "name": "Sample Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://api.flickr.com/services",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "7d24f793-ded5-4e93-9f95-e80f4cbf0434",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "0b7b9ceb-f1f3-4f3d-b4a1-1d34463ff687",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+          },
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "cross-site"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          },
+          {
+            "key": "dnt",
+            "value": "1"
+          }
+        ],
+        "url": "https://httpbin.org/get"
+      },
+      "response": []
+    }
+  ]
+}
